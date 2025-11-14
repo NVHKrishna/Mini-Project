@@ -2,9 +2,7 @@
 # 🐾   Animal Sound Classification Using Spectrograms with ML
    ### 🎧 Deep Learning with TensorFlow + MobileNetV2 + MongoDB
 
-This project classifies **animal sounds (dog vs cat)** using spectrogram images generated from audio files.
-Spectrograms are created using **Librosa**, and a deep learning model is trained using **MobileNetV2**.
-Prediction results are stored in **MongoDB**.
+This project presents a complete pipeline for **Animal sound classification (Cat vs Dog)** using Deep learning and Audio signal processing **(STFT)**. Instead of relying on raw audio, the system transforms sound waves into visually interpretable **spectrogram images**, enabling powerful image-based models like **MobileNetV2** to learn frequency patterns effectively. The spectrograms are generated from real-world audio samples—processed, organized, and fed into a **TensorFlow-powered classifier**. Finally, each prediction is logged into **MongoDB**,   creating a robust audio-analysis workflow suitable for Machine learning projects, Academic research, or Real-time applications.
 
 ---
 
@@ -45,12 +43,25 @@ Prediction results are stored in **MongoDB**.
 
 
 # ✔ Code Used
-stft = librosa.stft(signal, n_fft=2048, hop_length=512, win_length=2048) <br>
-spectrogram = librosa.amplitude_to_db(np.abs(stft), ref=np.max)
+  <img src="Screenshot 2025-11-14 204237.png" width="700">
+
 
 # ✔ Output Sample
-<img src="img/screenshot.png" width="700">
+<img src="Screenshot 2025-09-11 111118.png" width="800">
 
+# 🎙 Dataset Description
+
+The dataset consists of audio clips of:
+
+### -- Cat sounds datasets
+
+### -- Dog sounds datasets
+
+Dataset source: Kaggle
+Example:
+https://www.kaggle.com
+
+  <img src="Screenshot 2025-11-14 205008.png" width="700">
 
 <br>
 
@@ -96,10 +107,12 @@ The classifier uses Transfer Learning:
 
 
 # 📈 Training Graphs 
-<br>
-Accuracy & Validation Accuracy
-<p align="center"> <img src="img/accuracy_graph.png" width="700"> </p> <br>
-Loss & Validation Loss
-<p align="center"> <img src="img/loss_graph.png" width="700"> </p>
+## <u>Accuracy & Validation Accuracy</u>
 
+<p align="center"> <img src="Screenshot 2025-11-14 203627.png" width="600"> </p> <br>
+
+## <u>Loss & Validation Loss</u>
+<p align="center"> <img src="Screenshot 2025-11-14 203649.png" width="600"> </p>
+
+                        # 🎉 Done!
 
