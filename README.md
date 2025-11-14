@@ -1,6 +1,6 @@
 
-# 🐾 Animal Sound Classification Using Spectrograms  
-### 🎧 Deep Learning with TensorFlow + MobileNetV2 + MongoDB
+# 🐾   Animal Sound Classification Using Spectrograms with ML
+   ### 🎧 Deep Learning with TensorFlow + MobileNetV2 + MongoDB
 
 This project classifies **animal sounds (dog vs cat)** using spectrogram images generated from audio files.
 Spectrograms are created using **Librosa**, and a deep learning model is trained using **MobileNetV2**.
@@ -34,14 +34,14 @@ Prediction results are stored in **MongoDB**.
 ---
 
 # 📂 Project Structure
-<img src="img/screenshot.png" width="500">
+<img src="Screenshot 2025-11-14 195047.png" width="700">
 
 
 <br>
 
 # 📊 Spectrogram Generation
 
-<img src="img/screenshot.png" width="500">
+<img src="Screenshot 2025-11-14 194559.png" width="700">
 
 
 # ✔ Code Used
@@ -49,7 +49,7 @@ stft = librosa.stft(signal, n_fft=2048, hop_length=512, win_length=2048) <br>
 spectrogram = librosa.amplitude_to_db(np.abs(stft), ref=np.max)
 
 # ✔ Output Sample
-<img src="img/screenshot.png" width="500">
+<img src="img/screenshot.png" width="700">
 
 
 <br>
@@ -87,19 +87,19 @@ The classifier uses Transfer Learning:
 
 
  #  🎯 Making Predictions
-<img src="img/screenshot.png" width="500">
+<img src="Screenshot 2025-11-14 200316.png" width="700">
 
 
 
  # 🗄 MongoDB Logging
-<img src="img/screenshot.png" width="500">
+<img src="Screenshot 2025-11-14 200517.png" width="700" >
 
 
 # 📈 Training Graphs 
 <br>
 Accuracy & Validation Accuracy
-<p align="center"> <img src="img/accuracy_graph.png" width="500"> </p> <br>
+<p align="center"> <img src="img/accuracy_graph.png" width="700"> </p> <br>
 Loss & Validation Loss
-<p align="center"> <img src="img/loss_graph.png" width="500"> </p>
+<p align="center"> <img src="img/loss_graph.png" width="700"> </p>
 
 
