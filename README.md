@@ -34,20 +34,23 @@ Prediction results are stored in **MongoDB**.
 ---
 
 # 📂 Project Structure
-<img src="C:\Users\NVH Krishna\OneDrive\Pictures\Screenshots\Screenshot 2025-11-14 195047.png" width="500">
+<img src="img/screenshot.png" width="500">
+
 
 <br>
 
 # 📊 Spectrogram Generation
 
-img
+<img src="img/screenshot.png" width="500">
+
 
 # ✔ Code Used
 stft = librosa.stft(signal, n_fft=2048, hop_length=512, win_length=2048) <br>
 spectrogram = librosa.amplitude_to_db(np.abs(stft), ref=np.max)
 
 # ✔ Output Sample
-img
+<img src="img/screenshot.png" width="500">
+
 
 <br>
 
@@ -84,14 +87,19 @@ The classifier uses Transfer Learning:
 
 
  #  🎯 Making Predictions
- img
+<img src="img/screenshot.png" width="500">
+
 
 
  # 🗄 MongoDB Logging
- img
+<img src="img/screenshot.png" width="500">
 
 
-#  📈 Training Graph Examples
+# 📈 Training Graphs 
+<br>
 Accuracy & Validation Accuracy
-
+<p align="center"> <img src="img/accuracy_graph.png" width="500"> </p> <br>
 Loss & Validation Loss
+<p align="center"> <img src="img/loss_graph.png" width="500"> </p>
+
+
