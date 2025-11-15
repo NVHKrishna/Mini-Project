@@ -1,5 +1,5 @@
 
-# 🐾   Animal Sound Classification Using Spectrograms with ML <br>
+# 🐾   Animal Sound Classification Using Spectrograms with Machine Learning <br>
    ### 🎧 Deep Learning with TensorFlow + MobileNetV2 + MongoDB
 
 This project presents a complete pipeline for **Animal sound classification (Cat vs Dog)** using Deep learning and Audio signal processing **(STFT)**. Instead of relying on raw audio, the system transforms sound waves into visually interpretable **spectrogram images**, enabling powerful image-based models like **MobileNetV2** to learn frequency patterns effectively. The spectrograms are generated from real-world audio samples—processed, organized, and fed into a **TensorFlow-powered classifier**. Finally, each prediction is logged into **MongoDB**,   creating a robust audio-analysis workflow suitable for Machine learning projects, Academic research, or Real-time applications.
