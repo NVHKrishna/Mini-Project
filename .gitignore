@@ -1,0 +1,7 @@
+﻿.env
+.env.*
+venv/
+.venv/
+env/
+node_modules/
+*.wav

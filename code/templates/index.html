@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Model Output Viewer</title>
+    <style>
+        body { font-family: Arial; background: #f7f7f7; padding: 30px; }
+        h2 { color: #333; }
+        button { padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+        pre { background: #222; color: #0f0; padding: 15px; border-radius: 10px; white-space: pre-wrap; }
+    </style>
+</head>
+<body>
+    <h2>Run Prediction</h2>
+    <form action="/run_model" method="POST">
+        <button type="submit">Run Model</button>
+    </form>
+
+    {% if output %}
+        <h3>Prediction Output:</h3>
+        <pre>{{ output }}</pre>
+    {% endif %}
+</body>
+</html>
