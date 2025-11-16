@@ -67,23 +67,39 @@ https://www.kaggle.com
 
 # 🧠 Model Architecture (MobileNetV2)
 
-The classifier uses Transfer Learning:
+This project classifies animal sounds by converting audio into Mel Spectrogram images and feeding them into a MobileNetV2-based CNN classifier.
 
-  ### <u>Base Model:</u>
+🔹 MobileNetV2 (Feature Extractor)
+
+-- Pretrained on ImageNet
+
+-- Used with include_top=False
+
+-- All base layers frozen
+
+-- Extracts visual patterns from spectrograms
+
+🔹 Custom Layers Added
+
+-- GlobalAveragePooling2D
+
+-- Dropout (prevents overfitting)
+
+-- Dense layer for class separation
+
+-- Softmax output for multi-class prediction (Dog, Cat, etc.)
 
 
--- MobileNetV2(include_top=False)  <br>
--- Pretrained on ImageNet <br>
--- Frozen weights (for feature extraction) <br>
 
-<br>
 
  ### <u>Advantages: </u>
-
 
 ✔ Faster training  <br>
 ✔ High accuracy even with small datasets  <br>
 ✔ Lightweight and efficient <br>
+✔ Ideal for spectrogram-based audio classification <br>
+
+
 
 # 🏋️ Training Process
 ### <u>Steps :</u>
@@ -114,5 +130,5 @@ The classifier uses Transfer Learning:
 ## <u>Loss & Validation Loss</u>
 <p align="center"> <img src="Screenshot 2025-11-14 203649.png" width="600"> </p>
 
-                                 # 🎉 Done!
+                                                                   # 🎉 Done!
 
