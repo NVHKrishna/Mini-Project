@@ -130,5 +130,5 @@ This project classifies animal sounds by converting audio into Mel Spectrogram i
 ## <u>Loss & Validation Loss</u>
 <p align="center"> <img src="Screenshot 2025-11-14 203649.png" width="600"> </p>
 
-                                                                   # 🎉 Done!
+                                                                     # 🎉 Done!
 
